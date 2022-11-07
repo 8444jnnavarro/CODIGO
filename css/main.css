@@ -1,0 +1,521 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 30px;
+}
+
+.color1 {
+    background-color: #19D5DE;
+    /*Seleste*/
+}
+
+.color2 {
+    background-color: #F4F40E;
+    /*Amarillo*/
+}
+
+.color3 {
+    background-color: #FFFFFF;
+    /*Blanco*/
+}
+
+.color4 {
+    background-color: #359708;
+    /*Verde*/
+}
+
+.color5 {
+    background-color: #000000;
+    /*Negro*/
+    margin-left: 90 px;
+}
+
+.color4 h2 {
+    color: white;
+}
+
+.video {
+    height: auto;
+    border-radius: 10px;
+}
+
+.login {
+    padding-top: 52px;
+}
+
+.tab {
+    margin: 40px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.button {
+    left: 7px;
+}
+
+.boton {
+    background-color: #1896D9;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 38px;
+    border-style: none;
+}
+
+.boton:hover {
+    background-color: #0A689B;
+}
+
+.send {
+    background-color: #5488a3;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    border-style: none;
+}
+
+.send:hover {
+    background-color: #0A689B;
+}
+
+.section {
+    border-radius: 10px;
+    border-color: #000000;
+    border-style: solid;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-color: #636363;
+    font-size: 15px;
+}
+
+.img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space {
+    margin-right: 55px;
+}
+
+.loginTab h2 {
+    text-align: center;
+    color: white;
+}
+
+.loginTab {
+    text-align: left;
+    color: black;
+}
+
+.botonLogin {
+    width: 150px;
+    height: 50px;
+    border-style: none;
+}
+
+.forget {
+    text-align: right;
+}
+
+.forget a {
+    color: #03E128;
+    text-align: right;
+}
+
+.forget a:hover {
+    color: #00FF2A;
+}
+
+@media (max-width: 766px) {
+    .img {
+        width: 100%;
+    }
+
+    .section {
+        border-radius: 0px;
+    }
+
+    .button {
+        left: 0px;
+    }
+}
+
+/*=======Ventana flotante-DireccionEnvio=========*/
+#btn-modal {
+    display: none;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    z-index: 100;
+    overflow: auto;
+}
+
+#btn-modal:checked~.container-modal {
+    display: flex;
+}
+
+.content-modal {
+    width: 100%;
+    top: 80px;
+    max-width: 400px;
+    padding: 0 30px;
+    text-align: justify;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    background-position: center center;
+    /*respecto a body*/
+    background-repeat: no-repeat;
+}
+
+.content-modal h4 {
+    text-align: left;
+}
+
+.content-modal h5 {
+    color: white;
+}
+
+.content-modal h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.content-modal p {
+    padding: 15px 0px;
+}
+
+.content-modal .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .content-modal {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+/*=======Ventana flotante-InformaciónConfidencial=========*/
+
+.container-modalInfConf {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    z-index: 100;
+    overflow: auto;
+}
+
+#btn-modalInfConf:checked~.container-modalInfConf {
+    display: flex;
+}
+
+.content-modalInfConf {
+    width: 100%;
+    top: 80px;
+    max-width: 400px;
+    padding: 0 30px;
+    text-align: justify;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    background-position: center center;
+    /*respecto a body*/
+    background-repeat: no-repeat;
+}
+
+.content-modalInfConf h4 {
+    text-align: left;
+}
+
+.content-modalInfConf h5 {
+    color: white;
+}
+
+.content-modalInfConf h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.content-modalInfConf p {
+    padding: 15px 0px;
+}
+
+.content-modalInfConf .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modalInfConf .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modalInfConf .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+.cerrar-modalInfConf {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .content-modalInfConf {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+/*=======Ventana flotante-Productos=========*/
+#btn-modalProd {
+    display: none;
+}
+
+.container-modalProd {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    z-index: 100;
+    overflow: auto;
+}
+
+#btn-modalProd:checked~.container-modalProd {
+    display: flex;
+}
+
+.content-modalProd {
+    width: 100%;
+    top: 80px;
+    max-width: 600px;
+    padding: 0 30px;
+    text-align: justify;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    background-position: center center;
+    /*respecto a body*/
+    background-repeat: no-repeat;
+}
+
+.content-modalProd h4 {
+    text-align: left;
+}
+
+.content-modalProd h5 {
+    color: white;
+}
+
+.content-modalProd h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.content-modalProd p {
+    padding: 15px 0px;
+}
+
+.content-modalProd .btn-cerrar {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modalProd .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modalProd .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+.cerrar-modalProd {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .content-modalProd {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+/*=======Ventana flotante-Login=========*/
+#btn-modalLogin {
+    display: none;
+}
+
+.container-modalLogin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    z-index: 100;
+    overflow: auto;
+}
+
+#btn-modalLogin:checked~.container-modalLogin {
+    display: flex;
+}
+
+.content-modalLogin {
+    width: 100%;
+    top: 80px;
+    max-width: 400px;
+    padding: 0 30px;
+    text-align: justify;
+    background-color: #41647D;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    background-position: center center;
+    /*respecto a body*/
+    background-repeat: no-repeat;
+}
+
+.content-modalLogin h4 {
+    text-align: left;
+}
+
+.content-modalLogin h5 {
+    color: white;
+}
+
+.content-modalLogin h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.content-modalLogin p {
+    padding: 15px 0px;
+}
+
+.content-modalLogin .btn-cerrar {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modalLogin .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modalLogin .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+.cerrar-modalLogin {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .content-modalLogin {
+        width: 100%;
+        height: 60%;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Document
+    </title>
+    <link href="../css/contac.css" rel="stylesheet" />
+    <script src="../js/disguise.js" type="text/javascript">
+    </script>
+    <script src="../js/validate.js" type="text/javascript">
+    </script>
+</head>
+
+</html>
+
+<body>
+    <div class="container">
+        <form name="FormContacto" onsubmit="return validar(); this.form.submit();" method="post">
+            <section class="form-register">
+                <center>
+                    <h4>
+                        Contactos
+                    </h4>
+                </center>
+                Correo electrónico
+                <br />
+                <input class="controls" id="email" name="email" placeholder="&#9993; usuario@mail.com" required=""
+                    type="text" />
+                Fecha de Nacimiento
+                <br />
+                <input class="controls" id="date" name="date" placeholder="dd/mm/aa" required="" type="date" />
+                Teléfono
+                <br />
+                <input class="controls" id="phone" name="phone" placeholder="&#9742; Teléfono" required="" type="text" />
+                <input class="buttons" id="enviar" name="enviar" type="submit" value="Enviar" onclick="accionar()" />
+                <input class="buttons" style="background: #F1E600;" disabled="" id="enviando" name="enviando"
+                    type="button" value="Enviando datos....." />
+            </section>
+            <script type="text/javascript">ocultarBoton();</script>
+        </form>
+    </div>
+</body>
