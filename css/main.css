@@ -68,6 +68,19 @@ body {
     background-color: #0A689B;
 }
 
+.botonSave {
+    background-color: #1896D9;
+    color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 38px;
+    border-style: none;
+}
+
+.botonSave:hover {
+    background-color: #0A689B;
+}
+
 .send {
     background-color: #5488a3;
     color: white;
