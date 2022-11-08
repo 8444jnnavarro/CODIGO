@@ -16,7 +16,7 @@ function validar() {
     }
 
     if(expRegPhone.exec(vphone.value) && expRegEmail.exec(vemail.value))
-    return false;
+    this.form.submit();
 }
 
 /*onclick="javascript:close_tab();"*/
